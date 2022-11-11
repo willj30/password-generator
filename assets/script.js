@@ -1,6 +1,4 @@
-// Assignment code here
-
-document.querySelector("#generate").addEventListener("click", writePassword);
+ document.querySelector("#generate").addEventListener("click", writePassword);
 
   var lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   var upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
@@ -41,7 +39,6 @@ function generatePassword() {
      var checkUpper = confirm("Do you need UPPERCASE letters?"); 
      var checkNumber = confirm("Do you need numbers?"); 
      var checkSpecial = confirm("Do you need special characters?"); 
-    
      }
 
   var pwdCharacters = [];
@@ -65,11 +62,11 @@ for (var i = 0; i < checkLength; i++) {
 randomPwd = randomPwd + pwdCharacters[Math.floor(Math.random() * pwdCharacters.length)];
   }
   return randomPwd;
-  }
+}
 
   function writePassword() {
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
 
     passwordText.value = password;
-  }
+  }}
